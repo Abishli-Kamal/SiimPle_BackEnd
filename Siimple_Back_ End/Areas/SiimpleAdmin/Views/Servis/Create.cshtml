@@ -1,0 +1,31 @@
+﻿@using Siimple_Back__End.Models
+@model Servis
+@{
+    ViewData["Title"] = "Create";
+}
+<div asp-validation-summary="ModelOnly"></div>
+<form method="post" enctype="multipart/form-data">
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+        <input asp-for="Photo" id="form5Example1" class="form-control border border-info" />
+        <label class="form-label" for="form5Example1">Image</label>
+        <span class="text-danger" asp-validation-for="Photo"></span>
+    </div>
+    <div class="form-outline mb-4">
+        <input asp-for="Icon" id="form5Example1" class="form-control border border-info" />
+        <label class="form-label" for="form5Example1">Icon</label>
+        <span class="text-danger" asp-validation-for="Icon"></span>
+    </div>
+    <div class="form-outline mb-4">
+        <input asp-for="Title" id="form5Example1" class="form-control border border-info" />
+        <label class="form-label" for="form5Example1">Title</label>
+        <span class="text-danger" asp-validation-for="Title"></span>
+    </div>
+    <div class="form-outline mb-4">
+        <input asp-for="Description" id="form5Example1" class="form-control border border-info" />
+        <label class="form-label" for="form5Example1">Description</label>
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block mb-4">Create</button>
+</form>
+

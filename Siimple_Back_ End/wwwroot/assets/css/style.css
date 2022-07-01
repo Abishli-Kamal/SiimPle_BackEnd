@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-image: url("../img/hero-bg.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header .logo h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+header .icon {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .icon i {
+  position: fixed;
+  margin-top: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+header button {
+  background-color: #fd680e !important;
+  color: white !important;
+  width: 10%;
+}
+
+header input {
+  width: 20% !important;
+}
+
+header .menubar {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .menubar ul {
+  background-color: black;
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  top: 8%;
+  right: 0;
+  margin: 0;
+}
+
+header .menubar ul li {
+  margin: 2%;
+  list-style: none;
+  color: #ef9966;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 1%;
+}
+
+header .menuBarIcon {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .infocenter h2 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+header .infocenter p {
+  font-size: 25px;
+}
+
+main #about {
+  margin-top: 2%;
+}
+
+main #about .title h3 {
+  font-weight: 300;
+  color: #938f8a;
+}
+
+main #about .title p {
+  font-style: italic;
+}
+
+main #about .textIcon p {
+  font-size: 22px;
+}
+
+main #about .textIcon ul li {
+  list-style: none;
+  font-size: 18px;
+  color: #504f4e;
+  font-weight: 300;
+}
+
+main #about .textIcon ul li i {
+  color: orangered;
+  margin-right: 2%;
+}
+
+main #WhyUs {
+  margin-top: 5%;
+}
+
+main #WhyUs .img {
+  position: relative;
+}
+
+main #WhyUs .img .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 40%;
+  height: 8vh;
+  bottom: 0px;
+  width: 15%;
+  border: 3px solid #f8f1f1;
+  background-color: #fd680e;
+  color: #bd1414;
+}
+
+main #WhyUs .img .icon i {
+  margin-top: 0;
+  font-size: 30px;
+  color: white;
+}
+
+main .cardone:hover .icon {
+  background-color: white !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .cardone:hover .icon i {
+  color: orangered !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .cardone .title h5 {
+  cursor: pointer;
+}
+
+main .cardone .title h5:hover {
+  color: #fd680e;
+}
+
+main #contact {
+  margin-top: 3%;
+}
+
+main #contact .contactEnd i {
+  font-size: 25px;
+  color: orangered;
+  margin-top: 5%;
+}
+
+main #contact .contactEnd span {
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+main #contact .title {
+  text-align: center;
+}
+
+main #contact .title h2 {
+  font-size: 45px;
+  font-weight: 100;
+}
+
+main #contact .icons {
+  margin-top: 3%;
+}
+
+main #contact .icons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5a2c10;
+  width: 20%;
+  height: 5vh;
+  cursor: pointer;
+}
+
+main #contact .icons div:hover {
+  background-color: orangered;
+}
+
+main #contact .icons div i {
+  color: white;
+}
+
+main #contact form button {
+  background-color: #fd680e;
+  color: white;
+  width: 25%;
+}
+
+footer {
+  margin-top: 4%;
+  background-color: #2f1708;
+  height: 10vh;
+}
+
+footer .footerend {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

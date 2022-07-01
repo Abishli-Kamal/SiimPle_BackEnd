@@ -1,0 +1,65 @@
+﻿@using Siimple_Back__End.Models
+@using Siimple_Back__End.View_models
+@model List<Servis>
+
+<div class="table-responsive pt-3">
+    <a asp-controller="Servis" asp-action="Create" style="color:white;font-size:20px" class="mb-3 btn btn-success">Create Servis</a>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Icon
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Settings
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Servis pl in Model)
+            {
+                <tr>
+                    <td>
+                        <img style="width: 150px; height:90px" src="~/assets/imG/@pl.Image" />
+                    </td>
+                    <td>
+                        <i style="color:red; font-size:25px;" class="@pl.Icon"></i>
+                    </td>
+                    <td>
+                        @pl.Title
+                    </td>
+
+                    <td>
+                        @pl.Description
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <div class="detail">
+                                <a asp-controller="Servis" asp-action="Detail" asp-route-id="@pl.Id" class="btn btn-primary"><i class="mdi mdi-details"></i></a>
+                            </div>
+                            <div class="edit">
+                                <a asp-controller="Servis" asp-action="Edit" asp-route-id="@pl.Id" class="btn btn-warning">
+                                    <i class="mdi mdi-tooltip-edit"></i>
+                                </a>
+                            </div>
+                            <div class="delete">
+                                <a asp-controller="Servis" asp-action="Delete" asp-route-id="@pl.Id" class="btn btn-danger"> <i class="mdi mdi-delete-forever"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
